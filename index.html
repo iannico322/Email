@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;600&display=swap');
+
+        :root{
+            font-family: 'Inter', sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .screen{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            height: 100vh;
+            background: rgb(255, 255, 255);
+        }
+        .box{
+            display: flex;
+            flex-direction: column;
+            width: 500px;
+            min-height: 400px;
+            background-color: white;
+            border: 1px solid rgba(0, 0, 0, 0.21);
+            
+        }
+        img{
+            width: 50%;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            object-fit: contain;
+            align-self: center;
+        }
+        .header{
+            display: flex;
+            width: 100%;
+            height: 90px;
+            background-color: rgb(39, 39, 188);
+            color: white;
+            align-items: center;
+            justify-content: center;
+        }
+        h1{
+            font-size: 25px;
+            color: white;
+            font-weight: 400;
+        }
+        .text{
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 5px;
+            margin: 20px 30px 40px 30px;
+            gap: 20px;
+            
+        }
+
+        
+        .btn{
+            align-self: center;
+            padding: 10px ;
+            margin: 10px 0 10px 0;
+            font-weight: 700;
+            text-align: center;
+            width: 200px;
+            color: white;
+            background-color: rgb(29, 214, 29);
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        a{
+            color: rgba(25, 163, 255, 0.941);
+            text-decoration: none;
+        }
+        .btn:active{
+            background-color: rgb(6, 162, 6);
+        }
+        span{
+            color: rgba(25, 163, 255, 0.941);
+        }
+      
+    </style>
+  </head>
+  <body>
+    <div
+      class="screen "
+    >
+      <div
+        class="box "
+      >
+        <img
+          
+          src="./MagkahiOSA-logo.jpg"
+          alt="logo"
+        />
+        <div
+          class=" header "
+        >
+          <h1 class="text-2xl ">MagkahiOSA password reset</h1>
+        </div>
+
+        <div class="text">
+          <p class="text-xs ">
+            We heard that you lost your MagkahiOSA password. Sorry about that!
+           
+          
+            But don’t worry! You can use the following button to reset your
+            password:
+          </p>
+
+          <a
+            href="#"
+            class="btn"
+            >Password Reset</a
+          >
+          <div class="flex flex-col gap-4 text-xs ">
+            <p>
+              If you don’t recognize If you don’t use this link within 3 hours,
+              it will expire. To get a new password reset link, visit :<a href="#"
+                class="text-blue-500 underline cursor-pointer"
+              >
+                localhost:300</a
+              >
+            </p>
+
+            <p>
+              Thanks,, <br />
+              The MagkahiOSA Team
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
